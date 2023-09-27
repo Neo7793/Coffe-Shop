@@ -1,0 +1,258 @@
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 100rem;
+  }
+  .header {
+    .header-nav {
+      gap: 16rem;
+    }
+    .carousel__content {
+      padding-left: 12rem;
+    }
+  }
+  .explore-range-slider {
+    position: relative;
+  }
+  .explore-range-slider__ul {
+    max-width: 100rem;
+    &__li {
+      width: 33%;
+    }
+  }
+  .button-prev {
+    left: 0;
+  }
+  .button-next {
+    right: 0;
+  }
+  .campos-padding {
+    padding: 0 8rem;
+  }
+  .subitems-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .brewGuides__items__subitems {
+    width: 39%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .header {
+    .header-nav {
+      gap: 10rem;
+    }
+  }
+}
+@media screen and (max-width: 998px) {
+  html {
+    font-size: 55%;
+  }
+  .container {
+    max-width: 84rem;
+  }
+  .header {
+    .header-nav {
+      gap: 10rem;
+      padding: 2rem 4rem;
+      justify-content: space-between;
+      .header-nav-menu {
+        display: block;
+        cursor: pointer;
+        i {
+          font-size: 2rem;
+        }
+      }
+      &__left {
+        display: none;
+      }
+      &__right {
+        &__items {
+          display: none;
+        }
+        .shoppingCart {
+          display: block;
+        }
+      }
+    }
+  }
+  .carousel {
+    padding-top: 6rem;
+  }
+  .carousel__content {
+    padding-left: 12rem;
+  }
+  .slider-button {
+    display: none;
+  }
+  .campos-padding {
+    padding: 0 2rem;
+  }
+  .signUp {
+    padding: 12rem 4rem 0 2rem;
+  }
+  .footer__top {
+    flex-direction: column;
+    padding: 0 4rem;
+    align-items: start;
+    gap: 4.5rem;
+    &__stay {
+      width: 100%;
+    }
+    &__items {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      h2 {
+        display: none;
+      }
+      &__right {
+        display: block;
+        span {
+          i {
+            font-size: 2rem;
+            color: $color-white;
+          }
+        }
+      }
+    }
+    &__left {
+      width: 100%;
+      .footer-forms form .forms-emails {
+        padding: 22px 8px 10px 0;
+      }
+    }
+  }
+  .footer__bottom {
+    justify-content: start;
+    align-items: start;
+    padding: 1rem 2rem;
+    flex-direction: column-reverse;
+    gap: 4rem;
+    &__right {
+      align-items: start;
+      justify-content: start;
+      gap: 3rem;
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (max-width: 880px) {
+  .explore-range-slider__ul {
+    max-width: 70rem;
+  }
+  .explore-range-slider__ul__li {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .brewGuides__items__subitems {
+    width: 46%;
+  }
+  .campos-padding {
+    padding: 0 1rem;
+  }
+  .signUp {
+    padding: 12rem 0 0 0;
+  }
+  .carousel__content {
+    padding-left: 2rem;
+    width: 60%;
+    top: 6.2rem;
+    height: 90%;
+    justify-content: center;
+    gap: 10rem;
+  }
+  .container {
+    max-width: 62rem;
+  }
+  .sip__para p,
+  .equipmentPara p {
+    width: 60%;
+  }
+  .carousel__content__explore {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 625px) {
+  .carousel__content {
+    top: 5.2rem;
+    gap: 4rem;
+  }
+  .explore-range-slider__ul {
+    max-width: 45rem;
+    &__li {
+      width: 80%;
+    }
+  }
+  .campos {
+    flex-direction: column-reverse;
+    .campos__text {
+      width: 100%;
+      gap: 4rem;
+    }
+    .campos__pic {
+      width: 100%;
+    }
+  }
+  .signUp__pic {
+    flex-wrap: wrap;
+    &__left {
+      width: 100%;
+    }
+    &__right {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 596px) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    padding: 0 2rem;
+  }
+  .sip {
+    padding-bottom: 2rem;
+  }
+  .sip__para {
+    padding-top: 2rem;
+    p,
+    .equipmentPara p {
+      width: 75%;
+    }
+  }
+  .brewGuides__items__subitems {
+    width: 80%;
+  }
+  .subitems-pic img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 535px) {
+  .carousel__content {
+    top: 3.2rem;
+    width: 100%;
+    &__explore {
+      font-size: 3rem;
+    }
+  }
+  .carousel__content__shop span {
+    font-size: 1.5rem;
+    padding: 1.5rem 3rem;
+  }
+}
+@media screen and (max-width: 475px) {
+  .explore-range-slider__ul {
+    max-width: 40rem;
+    gap: 10rem;
+  }
+  .explore-range-slider__ul__li {
+    width: 100%;
+  }
+}

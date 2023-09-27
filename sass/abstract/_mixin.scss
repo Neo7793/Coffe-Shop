@@ -1,0 +1,54 @@
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexColumnSpaceBetween {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flexWrapCenter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexColumnStart {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+@mixin flexStart {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+@mixin fontSizeLarge {
+  font-size: $font-size-large;
+  font-family: $font-family-knockout;
+  letter-spacing: $letter-spacing-sm;
+}
+@mixin fontSizeUnderline {
+  font-size: $font-size-md;
+  letter-spacing: $letter-spacing-md;
+  text-decoration: underline;
+  font-size: 400;
+}

@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "GrotesqueMTStd";
+  src: url(../../public/font/GrotesqueMTStd.otf) format("truetype");
+}
+@font-face {
+  font-family: "Knockout";
+  src: url(../../public/font/Knockout-HTF68-FullFeatherwt.otf);
+}
+html {
+  font-family: "GrotesqueMTStd", sans-serif;
+}

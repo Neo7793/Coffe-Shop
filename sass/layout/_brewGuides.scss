@@ -1,0 +1,63 @@
+.brewGuides {
+  padding: 8rem 4rem;
+  @include flexColumnCenter;
+  gap: 3rem;
+  &__line {
+    @include flexCenter;
+    width: 48px;
+    height: 5px;
+    background-color: $color-green-light;
+  }
+  &__title {
+    @include flexColumnCenter;
+    gap: 2rem;
+    h2 {
+      font-size: $font-size-md;
+      letter-spacing: $letter-spacing-sm;
+      color: $color-green-light;
+    }
+    h1 {
+      @include fontSizeLarge;
+      font-size: 5.2rem;
+    }
+  }
+  &__items {
+    @include flexCenter;
+    align-content: normal;
+    flex-wrap: wrap;
+    gap: 4rem;
+    flex: 0 0 auto;
+
+    &__subitems {
+      width: 25%;
+      box-shadow: $item-box-shadow;
+      @include flexColumnStart;
+      gap: 2rem;
+      height: 100%;
+      border-radius: $border-radius;
+      padding-bottom: 2rem;
+      cursor: pointer;
+
+      .subitems-pic {
+        width: 100%;
+        img {
+          max-width: 100%;
+          border-radius: 8px 8px 0 0;
+        }
+      }
+      .subitems-line {
+        width: 24px;
+        height: 3px;
+        background-color: $color-brown;
+        margin: 0 2rem;
+      }
+      .subitems-text {
+        padding-left: 2rem;
+        padding-right: 1rem;
+        h1 {
+          font-size: $font-size-item;
+        }
+      }
+    }
+  }
+}

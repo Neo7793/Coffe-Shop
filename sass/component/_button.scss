@@ -1,0 +1,23 @@
+.slider-button {
+  .button {
+    z-index: 10;
+    position: absolute;
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 100%;
+    top: 40%;
+    @include flexCenter;
+    background-color: $color-orange;
+    opacity: 16%;
+    cursor: pointer;
+    i {
+      font-size: $font-size-md;
+    }
+  }
+  .button-prev {
+    left: -26px;
+  }
+  .button-next {
+    right: -6px;
+  }
+}

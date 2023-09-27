@@ -1,0 +1,47 @@
+.slider-second {
+}
+.equipmentTitle {
+  h1 {
+    @include fontSizeLarge;
+  }
+}
+.equipmentPara {
+  padding-top: 4rem;
+  p {
+    width: 40%;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: 0.05rem;
+  }
+}
+.equipmentLink {
+  padding-top: 2rem;
+
+  a {
+    @include fontSizeUnderline;
+  }
+}
+.equipment-slider {
+  padding-top: 4rem;
+  &__ul {
+    &__li {
+      .slider-img {
+      }
+      .slider-price {
+        p {
+          font-size: $font-size-sm;
+        }
+      }
+      .slider-explain {
+        h1 {
+          font-size: $font-size-md;
+          font-weight: bold;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

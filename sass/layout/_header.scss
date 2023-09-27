@@ -1,0 +1,180 @@
+.header {
+  box-shadow: $item-box-shadow;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  background-color: $color-white;
+  .header-nav {
+    @include flexCenter;
+    gap: 30rem;
+    .header-nav-menu {
+      display: none;
+    }
+    &__left {
+      @include flexWrapCenter;
+      gap: 4rem;
+      .items-active {
+        border-bottom: 3px solid $color-green-light;
+        a {
+          color: $color-green-light;
+          transition: 0.3s ease;
+        }
+      }
+      &__items {
+        padding: 2.5rem 0;
+        cursor: pointer;
+        @include flexCenter;
+        gap: 1rem;
+        position: relative;
+
+        a {
+          font-size: $font-size-md;
+          text-transform: uppercase;
+          letter-spacing: $letter-spacing-md;
+          font-weight: 400;
+          font-family: $font-family-knockout;
+        }
+        .arrow-down {
+          position: absolute;
+          right: -20px;
+        }
+        .header-nav-hover {
+          position: absolute;
+          top: 65px;
+          z-index: 10;
+          background-color: $color-white;
+          border: 1px solid #d5d5d5;
+          padding: 1.6rem 4rem;
+          @include flexColumnStart;
+          gap: 1rem;
+          border-radius: 8px;
+          display: none;
+          h1 {
+            font-size: $font-size-sm;
+            width: 100%;
+            @include flexCenter;
+            width: 24rem;
+            transition: 500ms ease;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+    &__right {
+      @include flexCenter;
+      gap: 2rem;
+      &__items {
+        cursor: pointer;
+        &__form {
+          position: relative;
+          .search-input {
+            border: solid black;
+            border-width: 0 0 1px;
+            padding: 0.4rem;
+            outline: 0;
+            font-size: $font-size-sm;
+            display: none;
+          }
+          .search-label {
+            display: none;
+          }
+          .search-submit {
+            position: absolute;
+            top: 0;
+            right: 0;
+            overflow: visible;
+          }
+        }
+        &__logo {
+          i {
+            font-size: $font-size-md;
+          }
+        }
+      }
+    }
+  }
+}
+.dark {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.4;
+  z-index: 21;
+  display: none;
+}
+.hamburger-menu {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 25;
+  width: 40vw;
+  height: 100vh;
+  background-color: $color-white;
+  padding: 2rem;
+  border-radius: 0 1rem 1rem 0rem;
+  box-shadow: -1rem 0 0.5rem rgba(255, 255, 255, 0.2);
+  .close-menu {
+    margin-bottom: 4rem;
+    span {
+      i {
+        font-size: $font-size-item;
+        color: red;
+        cursor: pointer;
+      }
+    }
+  }
+  .menu-title {
+    margin-top: 1rem;
+    h1 {
+      @include fontSizeLarge;
+      font-size: 2.2rem;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+  }
+  .menu-search {
+    margin-top: 3rem;
+    .menu-form {
+      gap: 1rem;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      position: relative;
+      .menu-input {
+        border: solid black;
+        border-width: 0 0 1px;
+        padding: 0.4rem;
+        outline: 0;
+        font-size: $font-size-sm;
+        width: 85%;
+      }
+      .input-image {
+        position: absolute;
+        left: 5px;
+        bottom: -2px;
+      }
+    }
+  }
+  .menu-login {
+    @include flexStart;
+    gap: 1rem;
+    margin-top: 3rem;
+    span {
+      i {
+        font-size: 2rem;
+      }
+    }
+    h1 {
+      padding-top: 0.3rem;
+      height: 100%;
+      font-size: $font-size-md;
+      font-weight: normal;
+    }
+  }
+}

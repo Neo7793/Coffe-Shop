@@ -1,0 +1,141 @@
+.footer {
+  background-color: $color-green-light;
+  padding: 6rem 0 3rem 0;
+  &__top {
+    @include flexCenter;
+    align-items: start;
+    gap: 1.5rem;
+    &__stay {
+      width: 18%;
+      h1 {
+        @include fontSizeLarge;
+        color: $color-white;
+        font-size: 8.2rem;
+        line-height: 0.8;
+      }
+    }
+    &__items {
+      width: 12%;
+
+      &__left {
+        @include flexColumnCenter;
+        justify-content: start;
+        gap: 2rem;
+        h1 {
+          width: 100%;
+          font-size: $font-size-sm;
+          font-weight: bold;
+          color: $color-white;
+          text-transform: uppercase;
+          position: relative;
+          margin-bottom: 3rem;
+        }
+        h1::after {
+          content: "";
+          width: 40px;
+          height: 4px;
+          background-color: $color-white;
+          z-index: 2;
+          position: absolute;
+          left: 0;
+          bottom: -2rem;
+          display: inline-block;
+        }
+
+        h2 {
+          width: 100%;
+          font-size: $font-size-sm;
+          color: $color-white;
+          text-transform: uppercase;
+        }
+      }
+      &__right {
+        display: none;
+      }
+    }
+    &__left {
+      width: 20%;
+      @include flexColumnStart;
+      gap: 2rem;
+      .after-pay {
+        width: 100%;
+        img {
+          max-width: 100%;
+          object-fit: cover;
+        }
+      }
+      .footer-signUp {
+        width: 100%;
+        h1 {
+          @include fontSizeLarge;
+          font-size: 3.2rem;
+          letter-spacing: 0.08rem;
+          line-height: 0.9;
+          color: $color-white;
+        }
+      }
+      .footer-forms {
+        width: 100%;
+        form {
+          @include flexColumnStart;
+          width: 100%;
+          gap: 0.5rem;
+          label {
+            font-size: $font-size-sm;
+            color: $color-white;
+          }
+          .forms-emails {
+            width: 100%;
+            outline: none;
+            border-radius: 4px;
+            border: 1px solid #bcbcbc;
+            padding: 12px 8px 10px 0;
+          }
+          .forms-submit {
+            width: 100%;
+            @include flexCenter;
+            padding: 1.5rem;
+            font-size: $font-size-item;
+            letter-spacing: 0.08;
+            font-family: $font-family-knockout;
+            background-color: $color-white;
+            border-radius: 8px;
+            border: 1px solid #bcbcbc;
+          }
+          .forms-submit:hover {
+            background-color: $color-white;
+            border-radius: 8px;
+            border: 1px solid #bcbcbc;
+          }
+        }
+      }
+    }
+  }
+  &__bottom {
+    margin-top: 2rem;
+    width: 100%;
+    @include flexSpaceBetween;
+    padding: 1rem 18rem;
+    &__left {
+      width: 50%;
+      h1 {
+        font-size: $font-size-sm;
+        color: $color-white;
+        font-weight: 400;
+      }
+    }
+    &__right {
+      @include flexCenter;
+      justify-content: end;
+      width: 50%;
+      gap: 2rem;
+      padding-right: 6rem;
+      h1 {
+        font-size: $font-size-sm;
+        font-weight: 400;
+        color: $color-white;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
