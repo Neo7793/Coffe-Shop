@@ -4,6 +4,8 @@ This project is the demo of https://camposcoffee.com/ website.
 # 
 https://github.com/Neo7793/use-popcorn/assets/134860589/67ae1b99-0477-41ea-bef7-1aa4414863b6
 
+# You can check it on : 
+https://sina-coffeshop-demo.netlify.app/
 
 # Skill used for this project
 <div align="left">
